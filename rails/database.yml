@@ -1,0 +1,3 @@
+host: db
+username: postgres
+password: password
