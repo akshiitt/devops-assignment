@@ -1,0 +1,10 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: build-push-run
+spec:
+  pipelineRef:
+    name: build-and-push-pipeline
+  params:
+    - name: IMAGE
+      value: docker.io/your-username/rails-app
